@@ -1,0 +1,3 @@
+{
+  "app": "npx ts-node bin/cdk-sample-apigw-with-auth0.ts"
+}
