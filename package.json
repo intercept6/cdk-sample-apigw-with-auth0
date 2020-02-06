@@ -12,18 +12,24 @@
   },
   "devDependencies": {
     "@aws-cdk/assert": "^1.22.0",
+    "@aws-cdk/aws-apigateway": "^1.22.0",
+    "@aws-cdk/aws-lambda": "^1.22.0",
+    "@aws-cdk/core": "^1.22.0",
+    "@types/fs-extra": "^8.0.1",
     "@types/jest": "^24.0.22",
     "@types/node": "10.17.5",
+    "aws-cdk": "^1.22.0",
+    "fs-extra": "^8.1.0",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
-    "aws-cdk": "^1.22.0",
     "ts-node": "^8.1.0",
     "typescript": "~3.7.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.22.0",
-    "@aws-cdk/aws-lambda": "^1.22.0",
-    "@aws-cdk/core": "^1.22.0",
-    "source-map-support": "^0.5.16"
+    "@types/jsonwebtoken": "^8.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^1.6.2",
+    "source-map-support": "^0.5.16",
+    "util": "^0.12.1"
   }
 }

@@ -1,14 +1,26 @@
-# Welcome to your CDK TypeScript project!
-
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+# AWS CDKを使いAPI GatewayでM2M認証をAuth0を使ってやるサンプル
 
 ## Useful commands
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+### Build
+
+```bash
+npm run build
+```
+
+### Lint
+
+```bash
+npm run lint-fix
+```
+
+コミット時にも自動で行われます。
+
+### Deploy
+
+```bash
+jwksUri='https://${auth0_tenant_name}.auth0.com/.well-known/jwks.json' \
+audience='https://${apigw_domain}.execute-api.ap-northeast-1.amazonaws.com/' \
+tokenIssue='https://${auth0_tenant_name}.auth0.com' \
+npm run cdk deploy
+```
