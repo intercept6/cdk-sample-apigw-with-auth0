@@ -2,7 +2,7 @@
 import * as childProcess from 'child_process';
 import * as fs from 'fs-extra';
 
-export const NODE_LAMBDA_LAYER_DIR = `${process.cwd()}/bundle`;
+export const NODE_LAMBDA_LAYER_DIR = process.env.GITHUB_WORKSPACE ? `${process.env.GITHUB_WORKSPACE}/bundle` : `${process.cwd()}/bundle`;
 export const NODE_LAMBDA_LAYER_RUNTIME_DIR_NAME = `nodejs`;
 
 
