@@ -1,6 +1,6 @@
-import {expect as expectCDK, matchTemplate, MatchStyle, SynthUtils} from '@aws-cdk/assert';
+import {SynthUtils} from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import CdkSampleApigwWithAuth0 = require('../lib/cdk-sample-apigw-with-auth0-stack');
+import CdkSampleApigwWithAuth0 = require('../../lib/cdk-sample-apigw-with-auth0-stack');
 
 test('Snapshot Test', () => {
     const app = new cdk.App();

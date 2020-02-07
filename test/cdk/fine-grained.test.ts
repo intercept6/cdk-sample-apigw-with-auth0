@@ -1,7 +1,6 @@
 import {expect as expectCDK, haveResource} from '@aws-cdk/assert';
-import {App, Stack} from "@aws-cdk/core";
-
-import CdkSampleApigwWithAuth0 = require('../lib/cdk-sample-apigw-with-auth0-stack');
+import {App} from "@aws-cdk/core";
+import CdkSampleApigwWithAuth0 = require('../../lib/cdk-sample-apigw-with-auth0-stack');
 
 test('Resources', () => {
     const app = new App();
