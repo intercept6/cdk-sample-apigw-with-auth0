@@ -1,9 +1,12 @@
 module.exports = {
-    "roots": [
-      "<rootDir>/test"
+    roots: [
+        "<rootDir>/test"
     ],
-    testMatch: [ '**/*.test.ts'],
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
+    testMatch: ['**/*.test.ts'],
+    transform: {
+        "^.+\\.tsx?$": "ts-jest"
     },
-  }
+    moduleNameMapper: {
+        '^@app/(.*)$': '<rootDir>/src/$1',
+    }
+};
